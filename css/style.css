@@ -1,3 +1,50 @@
 /* ini css */
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-icon {
+    background-image: url(https://picsum.photos/200/300);
+    background-size: cover;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+nav>a{
+    padding-left: 32px;
+    padding-right: 32px;
+    border: 1px solid;}
 
+.banner-container{
+    height: 350px;
+    width: 100%;
+    border: 1px solid;
+}
 
+.profile-icon {
+    background-image: url(../assets/1.png);
+    background-size: cover;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.profile-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profile-item {
+    text-align: center;
+}
+
+.profile-1 {
+    background-image: url(../assets/1.png);  
+}
+.profile-2 {
+    background-image: url(../assets/2.png);  
+}
+.profile-3 {
+    background-image: url(../assets/3.png);  
+}
