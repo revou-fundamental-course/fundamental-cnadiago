@@ -1,8 +1,11 @@
-/* ini css */
+/* css header */
 .nav-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 25px;
+    padding-right: 50px;
+    padding-bottom: 10px;
 }
 .logo-icon {
     background-image: url(https://picsum.photos/200/300);
@@ -16,12 +19,13 @@ nav>a{
     padding-right: 32px;
     border: 1px solid;}
 
+/* css Home Content */
 .banner-container{
     height: 350px;
     width: 100%;
     border: 1px solid;
 }
-
+/* css Our Profile Content  */
 .profile-icon {
     background-image: url(../assets/1.png);
     background-size: cover;
@@ -32,11 +36,12 @@ nav>a{
 
 .profile-content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: start;
 }
 
 .profile-item {
     text-align: center;
+    padding-left: 100px;
 }
 
 .profile-1 {
@@ -47,4 +52,77 @@ nav>a{
 }
 .profile-3 {
     background-image: url(../assets/3.png);  
+}
+
+/* css portofolio */
+.portofolio{
+    width: 100%;
+    height: 300px;
+    border: 1px solid;
+}
+
+/* css message us */
+.form-container{
+    display: flex;
+    justify-content: start;
+    gap:100px;
+      
+}
+/* css message us form  */
+.form-content{
+    flex:1;
+    align-content: center;
+    align-items: center;
+}
+.column-container{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.column-container:last-child{
+    align-items:start;
+}
+
+.column-left{
+    flex:10;
+    align-items:center;
+}
+.column-middle{
+    align-items: end;
+    align-items:center;
+    flex:1;
+}
+.column-right{
+    align-items:start;
+    flex:50;
+}
+
+input[type="text"],input[type="date"]{
+    width: 100%;
+    padding:10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-size: x-large;
+}
+input[type="textarea"]{
+    width: 100%;
+    height: 200px;
+    padding:10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+button{
+    flex-grow: 1;
+    margin: 0 5 px;
+    font-size: x-large;
+}
+
+/* css display data  */
+.display-content{
+    flex:1;
+    align-items: start;
+    height:auto;
+    width: 100%;
+    border: 1px solid;
 }

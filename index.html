@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Si Ahli Data CN</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{font-family: Segoe UI;font-size: xx-large;}
+        section,main{padding-left: 50px;padding-right: 50px;}
+         </style>
 </head>
 <body>
     <header class="nav-container">
@@ -22,7 +26,8 @@
     <!-- Ini Home Content -->
      <section> 
         <header>
-            <h1> Hi, User. Welcome to Website </h1>
+            <h1> Hi,  <span id="name"> User </span>. Welcome to Website </h1>
+            <script src="js/script.js"></script>
         </header>
         <article>
             <p> Ini adalah website portofolio saya</p>
@@ -50,8 +55,63 @@
             </article>
         </header>
      </section>
-    <!-- Ini Portofolio Content -->
-    <!-- Ini Message Us Content -->
+     <hr>
+     <!-- Ini Portofolio -->
+     <section>
+        <article class="portofolio">
+        <h1> gak tau mau nyimpen apa</h1>
+        </article>
+
+     </section>
+     <hr>
+     <!-- Ini Form -->
+     <section>
+        <header>
+            <h1>Message Us</h1>
+        </header>
+        <div class="form-container">  
+        <article class="form-content">
+                      <div class="column-container">
+                    <div class="column-left"><label for="Name">Nama</label></div>
+                    <div class="column-middle">:</div>
+                    <div class="column-right"><input id="Name" type="text"></div>
+                </div>
+                <div class="column-container">
+                    <div class="column-left"><label for="Bday">Tanggal Lahir</label></div>
+                    <div class="column-middle">:</div>
+                    <div class="column-right"><input id="Bday" type="date"></div>
+                </div>
+                <div class="column-container">
+                    <div class="column-left"><label for="Gender">Jenis Kelamin</label></div>
+                    <div class="column-middle">:</div>
+                    <div class="column-right">
+                        <input type="radio" id="Perempuan" name="Gender" value="Perempuan">
+                        <label for="Perempuan">Perempuan</label>
+                        <input type="radio" id="Laki-laki" name="Gender" value="Laki-laki">
+                        <label for="Laki-laki">Laki-laki</label>
+                    </div>
+                </div>
+                <br>
+                <div class="column-container">
+                    <div class="column-left"><label for="Note">Pesan</label></div>
+                    <div class="column-middle">:</div>
+                    <div class="column-right"><input id="Note" type="textarea"></div>
+                </div>
+                <div class="column-container">
+                    <button type="button" onclick="doSomething()">Submit</button>
+                </div>
+        </article>
+        <!-- Ini adalah display data -->
+        <article class="display-content">
+                    
+                 <p> halo </p>
+           
+             </article>
+        </div>
+        </section>   
     </main>
+    <footer>
+        <p> dibuat oleh CN</p>
+    </footer>
 </body>
 </html>
