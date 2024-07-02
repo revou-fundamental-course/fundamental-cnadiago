@@ -1,5 +1,5 @@
 /* css header */
-.nav-container{
+.header-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,10 +14,18 @@
     height: 100px;
     width: 100px;
 }
-nav>a{
-    padding-left: 32px;
-    padding-right: 32px;
-    border: 1px solid;}
+.nav-container{
+    display: flex;
+    border: 1px solid;
+    text-align: center;
+    justify-content: center;
+   }
+
+.nav-container>a{
+    padding: 10px;
+    border: 1px solid;
+    text-align: center;
+}
 
 /* css Home Content */
 .banner-container{

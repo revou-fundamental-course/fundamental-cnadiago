@@ -8,26 +8,36 @@
     <style>
         body{font-family: Segoe UI;font-size: xx-large;}
         section,main{padding-left: 50px;padding-right: 50px;}
+        @media screen and (max-width: 600px) {
+            .header-container{
+                flex-direction: column;
+            }
+            .nav-container{
+                width: 100%;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
          </style>
 </head>
 <body>
-    <header class="nav-container">
+    <header class="header-container">
         <div class="logo-icon"></div>
-        <nav>
-            <a>Home</a>
-            <a>Our Profile</a>
-            <a>Portofolio</a>
-            <a>Message Us</a>
-        </nav>
+        <div class="nav-container">
+    
+            <a href="#Home">Home</a>
+            <a href="#Profile">Our Profile</a>
+            <a href="#Portofolio">Portofolio</a>
+            <a href="#Form">Message Us</a>
+        </div>
         
     </header>
     <hr>
     <main>
     <!-- Ini Home Content -->
-     <section> 
+     <section id="Home"> 
         <header>
             <h1> Hi, User . Welcome to Website </h1>
-            <script src="js/script.js"></script>
         </header>
         <article>
             <p> Ini adalah website portofolio saya</p>
@@ -36,7 +46,7 @@
      </section>
         <hr>
     <!-- Ini Our Profile Content -->
-     <section>
+     <section id="Profile">
         <header>
             <h1>Our Profile</h1>
             <article class="profile-content">
@@ -57,7 +67,7 @@
      </section>
      <hr>
      <!-- Ini Portofolio -->
-     <section>
+     <section id="Portofolio">
         <article class="portofolio">
         <h1> gak tau mau nyimpen apa</h1>
         </article>
@@ -65,7 +75,7 @@
      </section>
      <hr>
      <!-- Ini Form -->
-     <section>
+     <section id="Form">
         <header>
             <h1>Message Us</h1>
         </header>
