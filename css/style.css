@@ -1,3 +1,9 @@
+/* css style  */
+body{font-family: Segoe UI;}
+section,main{padding-left: 50px;padding-right: 50px;}
+
+
+
 /* css header */
 .header-container{
     display: flex;
@@ -13,6 +19,10 @@
     border-radius: 50%;
     height: 100px;
     width: 100px;
+    max-height: 100%;
+    max-width: 100%;
+    flex: 0 0 auto;
+    padding-right: 10px;
 }
 .nav-container{
     display: flex;
@@ -28,10 +38,20 @@
 }
 
 /* css Home Content */
+
 .banner-container{
-    height: 350px;
-    width: 100%;
-    border: 1px solid;
+    max-width: 1080px;
+    height: 540px;
+    border: 1px solid;    
+}
+
+.banner-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.banner-button {
+padding-left: 340px;
 }
 /* css Our Profile Content  */
 .profile-icon {
@@ -40,16 +60,21 @@
     border-radius: 50%;
     height: 100px;
     width: 100px;
+    max-height: 100%;
+    max-width: 100%;
+    flex: 0 0 auto;
+
 }
 
 .profile-content {
     display: flex;
     justify-content: start;
+    text-align: center;
 }
 
 .profile-item {
     text-align: center;
-    padding-left: 100px;
+    padding-left: 20px;
 }
 
 .profile-1 {
@@ -64,21 +89,22 @@
 
 /* css portofolio */
 .portofolio{
-    width: 100%;
+    width: 1920px;
     height: 300px;
     border: 1px solid;
 }
 
 /* css message us */
 .form-container{
-    display: flex;
+    width: 1920px;
     justify-content: start;
     gap:100px;
+    display: flex;
       
 }
 /* css message us form  */
 .form-content{
-    flex:1;
+    flex: 0 1 auto;
     align-content: center;
     align-items: center;
 }
@@ -111,7 +137,6 @@ input[type="text"],input[type="date"]{
     padding:10px;
     margin-bottom: 10px;
     box-sizing: border-box;
-    font-size: x-large;
 }
 input[type="textarea"]{
     width: 100%;
@@ -123,14 +148,124 @@ input[type="textarea"]{
 button{
     flex-grow: 1;
     margin: 0 5 px;
-    font-size: x-large;
 }
 
 /* css display data  */
 .display-content{
-    flex:1;
+    flex: 0 1 auto;
     align-items: start;
     height:auto;
     width: 100%;
     border: 1px solid;
 }
+
+
+/* css top button  */
+#myBtn {
+    display: none; 
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: 0;
+    outline: none; 
+    background-color: #4CAF50;
+    color: white; 
+    cursor: pointer; 
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+
+   #myBtn:hover {
+    background-color: #555;
+  }
+
+
+
+@media screen and (max-width: 600px) {
+    body {
+        padding-left: none;
+        padding-right: none;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    button {
+        font-size: 14px;
+        padding-left: none ;
+       
+    }
+
+    .header-container{
+        flex-direction: column;
+    }
+    .nav-container{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo-icon{
+        margin-bottom: 14px;
+    }
+    .profile-content{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .profile-item{
+        padding-left: 0;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .banner-container{
+        max-width: 300px;
+        height: auto;
+    }
+       
+    .form-container {
+        flex-direction: column;
+        justify-content : flex-start;
+        align-items: flex-start;
+    }
+
+    .form-content {
+        flex:0;
+        align-content: center; 
+    }
+
+    .display-content{
+        flex: 0;
+        align-items: start;
+        height:auto;
+        width: 300px;
+        border: 1px solid;
+    }
+
+    .portofolio{
+        width: 300px;
+        height: auto;
+        border: 1px solid;
+    }
+    .banner-button {
+        padding-left: 0;
+    }
+
+    #myBtn {
+        display: none; 
+        position: fixed;
+        bottom: 5px;
+        right: 10px;
+        z-index: 99;
+        border: 0;
+        outline: none; 
+        background-color: #4CAF50;
+        color: white; 
+        cursor: pointer; 
+        padding: 5px;
+        border-radius: 2px;
+        font-size: 10px;
+      }
+
+}
+
