@@ -14,7 +14,7 @@ section,main{padding-left: 50px;padding-right: 50px;}
     padding-bottom: 10px;
 }
 .logo-icon {
-    background-image: url(https://picsum.photos/200/300);
+    background-image: url(../assets/Logo.png);
     background-size: cover;
     border-radius: 50%;
     height: 100px;
@@ -100,37 +100,33 @@ padding-left: 340px;
     justify-content: start;
     gap:100px;
     display: flex;
-      
+         
 }
 /* css message us form  */
+
 .form-content{
     flex: 0 1 auto;
     align-content: center;
     align-items: center;
 }
-.column-container{
-    display: flex;
-    align-content: center;
-    align-items: center;
-}
 
-.column-container:last-child{
-    align-items:start;
-}
+  table {
+    align-items: start;
+  }
+  table td {
+    vertical-align: top;
+  }
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 300px;
+    box-sizing: border-box; /* Menghitung padding dan border dalam lebar total */
+    padding: 8px; /* Berikan padding untuk estetika */
+    font-size: 14px; /* Ukuran font yang disarankan */
+  }
 
-.column-left{
-    flex:10;
-    align-items:center;
-}
-.column-middle{
-    align-items: end;
-    align-items:center;
-    flex:1;
-}
-.column-right{
-    align-items:start;
-    flex:50;
-}
+
 
 input[type="text"],input[type="date"]{
     width: 100%;
@@ -144,27 +140,46 @@ input[type="textarea"]{
     padding:10px;
     margin-bottom: 10px;
     box-sizing: border-box;
+   
 }
 button{
     flex-grow: 1;
     margin: 0 5 px;
 }
 
+
+
 /* css display data  */
 .display-content{
     flex: 0 1 auto;
+    align-content: start;
     align-items: start;
-    height:auto;
-    width: 100%;
-    border: 1px solid;
+   
 }
 
+#result {
+    align-items: start;
+    height:auto;
+    width: auto;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+#result.no-border {
+    border: none;
+  }
+
+   #result.with-border {
+    border: 1px solid;
+  }
 
 /* css top button  */
 #myBtn {
     display: none; 
     position: fixed;
-    bottom: 20px;
+    bottom: 50px;
     right: 30px;
     z-index: 99;
     border: 0;
@@ -181,18 +196,38 @@ button{
     background-color: #555;
   }
 
+  .footer-note {
+    text-align: end;
+    padding-right: 50px;
+  }
+
 
 
 @media screen and (max-width: 600px) {
-    body {
+    header {
         padding-left: none;
         padding-right: none;
         font-size: 14px;
         line-height: 1.5;
     }
 
-    button {
+    article {
+        padding-left: none;
+        padding-right: none;
         font-size: 14px;
+        line-height: 1.5;
+    }
+
+    section {
+        padding-left: none;
+        padding-right: none;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+  
+
+    button {
+        font-size: 10px;
         padding-left: none ;
        
     }
@@ -251,10 +286,29 @@ button{
         padding-left: 0;
     }
 
+
+      input[type="text"],
+      input[type="email"],
+      select,
+      textarea {
+        width: 100%;
+        box-sizing: border-box; /* Menghitung padding dan border dalam lebar total */
+        padding-top: 1px;
+        padding-bottom: 1px;
+        padding-right: 1px; /* Berikan padding untuk estetika */
+        font-size: 7px; /* Ukuran font yang disarankan */
+      }
+    
+      #horizontal-line {
+        display: block;
+        border: 1px solid;
+        margin: 20px 0;
+    
+
     #myBtn {
         display: none; 
         position: fixed;
-        bottom: 5px;
+        bottom: 50px;
         right: 10px;
         z-index: 99;
         border: 0;
@@ -264,6 +318,10 @@ button{
         cursor: pointer; 
         padding: 5px;
         border-radius: 2px;
+        font-size: 12px;
+      }
+
+      .footer-note {
         font-size: 10px;
       }
 
