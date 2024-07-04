@@ -1,3 +1,4 @@
+// javascript untuk prompt ganti nama 
 function replaceUser(){
     let User = prompt("Isi nama kamu di sini","Seseorang");
     document.getElementById("User").innerHTML = User;
@@ -6,6 +7,7 @@ function replaceUser(){
 
 replaceUser();
 
+// javascript untuk banner
 
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -32,7 +34,7 @@ setInterval(function() {
 }, 5000);
 
 
-
+// javascript untuk portofolio1
 
 var slideIndex1 = 1;
 showDivs1(slideIndex1);
@@ -54,6 +56,7 @@ function showDivs1(n) {
     imgList1[slideIndex1 - 1].style.display = 'block';
 }
 
+// javascript untuk portofolio2
 
 var slideIndex2 = 1;
 showDivs2(slideIndex2);
@@ -75,7 +78,7 @@ function showDivs2(n) {
     imgList2[slideIndex2 - 1].style.display = 'block';
 }
 
-
+// javascript untuk portofolio3
 
 var slideIndex3 = 1;
 showDivs3(slideIndex3);
@@ -97,7 +100,7 @@ function showDivs3(n) {
     imgList3[slideIndex3 - 1].style.display = 'block';
 }
 
-
+// javascript untuk form+display
 
 function handleFormSubmit(event) {
     event.preventDefault();
@@ -124,14 +127,14 @@ function handleFormSubmit(event) {
 
      window.onscroll = function() {scrollFunction()};
 
-            function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                 document.getElementById("myBtn").style.display = "block";
-            } else {
-                 document.getElementById("myBtn").style.display = "none";
-            }
-            }
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+    }
 
-            function topFunction() {
-                    document.documentElement.scrollTop = 0;
-            }
+function topFunction() {
+            document.documentElement.scrollTop = 0;
+    }
