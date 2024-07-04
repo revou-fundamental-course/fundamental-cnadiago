@@ -453,17 +453,17 @@ button{
      #myBtn {
         display: none; 
         position: fixed;
-        bottom: 50px;
-        right: 30px;
+        bottom: 10px;
+        right: 10px;
         z-index: 99;
         border: 0;
         outline: none; 
         background-color: #4CAF50;
         color: white; 
         cursor: pointer; 
-        padding: 15px;
-        border-radius: 10px;
-        font-size: 18px;
+        padding: 5px;
+        border-radius: 8px;
+        font-size: 8px;
       }
     
        #myBtn:hover {
