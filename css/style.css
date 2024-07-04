@@ -276,29 +276,29 @@ button{
     /* media query all  */
     
     header {
-        padding-left: none;
-        padding-right: none;
+        padding-left: 0;
+        padding-right: 0;
         font-size: 14px;
         line-height: 1.5;
     }
 
     article {
-        padding-left: none;
-        padding-right: none;
+        padding-left: 0;
+        padding-right: 0;
         font-size: 14px;
         line-height: 1.5;
     }
 
     section {
-        padding-left: none;
-        padding-right: none;
+        padding-left: 0;
+        padding-right: 0;
         font-size: 14px;
         line-height: 1.5;
     }
   
     button {
         font-size: 10px;
-        padding-left: none ;   
+        padding-left: 0 ;   
     }
 
      /* media query navigation */
