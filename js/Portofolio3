@@ -1,0 +1,19 @@
+var slideIndex3 = 1;
+showDivs3(slideIndex3);
+
+function plusDivs3(n) {
+    showDivs3(slideIndex3 += n);
+}
+
+function showDivs3(n) {
+    var i;
+    var imgList3 = document.getElementsByClassName("Portofolio3");
+    if (n > imgList3.length) slideIndex3 = 1;
+    else if (n < 1) slideIndex3 = imgList3.length;
+
+    for (i = 0; i < imgList3.length; i++) {
+        imgList3[i].style.display = 'none';
+    }
+
+    imgList3[slideIndex3 - 1].style.display = 'block';
+}
